@@ -138,6 +138,9 @@ export const CreditScoreProvider = ({ children }) => {
       case 'Slower':
         score -= 20;
         break;
+      default:
+        // No change for unknown values
+        break;
     }
     
     // Seasonal impact
@@ -153,6 +156,9 @@ export const CreditScoreProvider = ({ children }) => {
         break;
       case 'None':
         score += 10;
+        break;
+      default:
+        // No change for unknown values
         break;
     }
     

@@ -29,7 +29,8 @@ const ScoreReport = ({ handleResetCalculator }) => {
   }
 
   const { scores } = reportData;
-  const { businessInfo, financialData, creditHistory, operationalMetrics } = reportData;
+  // Removed unused variables from destructuring
+// const { businessInfo, financialData, creditHistory, operationalMetrics } = reportData;
 
   // Helper to get score category
   const getScoreCategory = (score) => {
@@ -117,22 +118,7 @@ const ScoreReport = ({ handleResetCalculator }) => {
               </Button>
             </Box>
           </Paper>
-          <Box sx={{ display: 'flex', justifyContent: 'center', mt: 3 }}>
-            <Button
-              variant="contained"
-              onClick={() => {
-                resetCalculator();
-              }}
-              sx={{
-                backgroundColor: '#dc004e',
-                '&:hover': {
-                  backgroundColor: '#b00036'
-                }
-              }}
-            >
-              Reset Calculator
-            </Button>
-          </Box>
+          
         </>
       )}
     </Box>

@@ -6,13 +6,10 @@ import {
   Box,
   TextField,
   Button,
-  FormControl,
-  InputLabel,
-  Select,
-  MenuItem,
+
   Typography,
   Slider,
-  SliderProps,
+
 } from '@mui/material';
 
 const schema = yup.object({
@@ -42,7 +39,7 @@ const schema = yup.object({
 });
 
 const FinancialDataForm = ({ onSubmit, defaultValues, showBack = false, onBack = () => {} }) => {
-  const { register, handleSubmit, formState: { errors }, setValue, control } = useForm({
+  const { register, handleSubmit, formState: { errors }, control } = useForm({
     resolver: yupResolver(schema),
     defaultValues: defaultValues || {
       monthlySales: 0,

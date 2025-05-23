@@ -4,7 +4,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 import {
   Box,
-  TextField,
+
   Button,
   FormControl,
   InputLabel,
@@ -12,7 +12,7 @@ import {
   MenuItem,
   Typography,
   Slider,
-  SliderProps,
+
 } from '@mui/material';
 
 const schema = yup.object({
@@ -27,7 +27,7 @@ const schema = yup.object({
 });
 
 const OperationalMetricsForm = ({ onSubmit, defaultValues, showBack, onBack }) => {
-  const { register, handleSubmit, formState: { errors }, setValue, control, watch } = useForm({
+  const { handleSubmit, formState: { errors }, setValue, control, watch } = useForm({
     resolver: yupResolver(schema),
     defaultValues: {
       ...defaultValues,

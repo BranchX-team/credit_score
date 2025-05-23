@@ -6,14 +6,12 @@ import {
   Card,
   CardContent,
   Grid,
-  useTheme,
+  // eslint-disable-next-line
   useMediaQuery,
 } from '@mui/material';
 import { Link as RouterLink } from 'react-router-dom';
 
 const Home = () => {
-  const theme = useTheme();
-  const isMobile = useMediaQuery(theme.breakpoints.down('sm'));
 
   return (
     <Box sx={{

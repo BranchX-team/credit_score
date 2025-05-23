@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCreditScore } from '../context/CreditScoreContext';
-import { Box, Typography, Paper, Grid, Button, LinearProgress } from '@mui/material';
+import { Box, Typography, Paper, Grid, Button } from '@mui/material';
 import { Chart as ChartJS, ArcElement, Tooltip, Legend } from 'chart.js';
 import { Doughnut } from 'react-chartjs-2';
 

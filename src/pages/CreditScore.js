@@ -1,6 +1,6 @@
 import React from 'react';
 import { useCreditScore } from '../context/CreditScoreContext';
-import { Box, Stepper, Step, StepLabel, Typography, Paper, CircularProgress, Button } from '@mui/material';
+import { Box, Stepper, Step, StepLabel, Typography, Paper, CircularProgress } from '@mui/material';
 import BusinessInfoForm from '../components/forms/BusinessInfoForm';
 import FinancialDataForm from '../components/forms/FinancialDataForm';
 import CreditHistoryForm from '../components/forms/CreditHistoryForm';

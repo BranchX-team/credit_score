@@ -13,6 +13,7 @@ A comprehensive web application for calculating credit scores for retail shops i
 - Dark/light theme support
 - PDF report generation
 - Progress saving
+- Interactive command-line tool for quick scoring
 
 ## Technical Stack
 
@@ -35,6 +36,10 @@ A comprehensive web application for calculating credit scores for retail shops i
    ```bash
    npm start
    ```
+4. Run the interactive command-line calculator:
+   ```bash
+   npm run cli
+   ```
 
 ## Usage
 
@@ -43,6 +48,7 @@ A comprehensive web application for calculating credit scores for retail shops i
 3. Enter credit history details
 4. Submit operational metrics
 5. View your credit score and detailed report
+6. Alternatively, run `npm run cli` for the interactive command-line version
 
 ## Credit Score Calculation Methodology
 
